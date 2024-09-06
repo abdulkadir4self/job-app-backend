@@ -8,7 +8,7 @@ const app = express();
 // console.log('PORT:', process.env.PORT); // Should output 5000
 
 app.use(cors({
-    origin: 'https://job-app-frontend-alpha.vercel.app', // Allow only this origin
+    origin: 'https://job-app-backend-three.vercel.app/', // Allow only this origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   }));
