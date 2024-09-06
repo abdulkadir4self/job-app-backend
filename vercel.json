@@ -7,7 +7,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "http://localhost:3000"
+          "value": "https://job-app-frontend-alpha.vercel.app"
         },
         {
           "key": "Access-Control-Allow-Methods",
