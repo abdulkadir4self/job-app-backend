@@ -8,11 +8,11 @@ const app = express();
 // console.log('PORT:', process.env.PORT); // Should output 5000
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow only this origin
+    origin: 'https://job-app-frontend-alpha.vercel.app', // Allow only this origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   }));
-  
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
@@ -32,11 +32,11 @@ app.get('/test', (req, res) => {
 
 //auth routes start here
 const authRoutes = require('./routes/authRoutes');
-app.use('/api/v1/auth', authRoutes );
+app.use('/auth', authRoutes );
 
 //job routes start here
 const jobFormRoutes = require('./routes/jobFormRoutes');
-app.use('/api/v1/adminJob', jobFormRoutes );
+app.use('/adminJob', jobFormRoutes );
 
 
 
