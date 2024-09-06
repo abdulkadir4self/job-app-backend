@@ -7,8 +7,12 @@ const app = express();
 
 // console.log('PORT:', process.env.PORT); // Should output 5000
 
-
-app.use( cors() );
+app.use(cors({
+    origin: 'http://localhost:3000', // Allow only this origin
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+  }));
+  
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
