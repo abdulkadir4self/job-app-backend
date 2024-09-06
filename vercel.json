@@ -7,7 +7,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://job-app-backend-three.vercel.app/"
+          "value": "https://job-app-frontend-alpha.vercel.app"
         },
         {
           "key": "Access-Control-Allow-Methods",
